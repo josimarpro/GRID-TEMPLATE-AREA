@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.cabeçalho{
+    background-color: aquamarine;
+}
+.menu{
+    background-color: cornflowerblue;
+}
+.seção-principal{
+    background-color: hotpink;
+}
+.aside{
+    background-color: orangered;
+}
+.rodapé{
+    background-color: green;
+}
+.container{
+    display: grid;
+    /*grid-template-areas: "cabeçalho cabeçalho cabeçalho"
+    "menu seção-principal aside"
+    "rodapé rodapé rodapé"; */
+
+    grid:
+    "cabeçalho cabeçalho cabeçalho" 200px
+    "menu seção-principal aside" 400px
+    "rodapé rodapé rodapé" 250px
+    / 160px auto 160px
+}
+
+.cabeçalho{
+    grid-area: cabeçalho;
+}
+
+.menu{
+    grid-area: menu;
+}
+.seção-principal{
+    grid-area: seçao principal;
+}
+
+.aside{
+    grid-area: aside;
+}
+
+.rodapé{
+    grid-area: rodapé;
+}
